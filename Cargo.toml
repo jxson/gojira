@@ -1,0 +1,10 @@
+[package]
+name = "gojira"
+version = "0.1.0"
+authors = ["Jason Campbell <jasoncampbell@google.com>"]
+license = "ISC"
+
+[dependencies]
+clap = "2.26.2"
+error-chain = "0.11.0"
+hyper = "0.11.6"
