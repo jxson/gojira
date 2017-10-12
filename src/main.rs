@@ -4,6 +4,7 @@ extern crate gojira;
 
 use gojira::errors::*;
 use gojira::cli::{Action};
+use gojira::client;
 
 quick_main!(run);
 
@@ -13,10 +14,8 @@ fn run() -> Result<()> {
     match options.action {
         Action::ListProjects => list_projects(),
     }
-
-    Ok(())
 }
 
-fn list_projects() {
-    println!("Should list projects.");
+fn list_projects() -> Result<()> {
+    client::projects()
 }
